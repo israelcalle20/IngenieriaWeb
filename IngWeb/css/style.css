@@ -1,0 +1,182 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Roboto Condensed", sans-serif;
+}
+/* -------------Estilos de la cabecera ------------- */
+header.mainHeader, section.mainSlider, section.news{
+	width: 80%;
+	background-color: #ccc;
+	margin: 0 auto;
+}
+header.mainHeader h2{
+	padding: 30px ;
+	font-family: "Imperial Script";
+	width: 30%;
+	display: inline-block;
+}
+header.mainHeader nav{
+	width: 60%;
+	display: inline-block;
+	text-align: right;
+}
+header.mainHeader nav a{
+	text-decoration: none;
+	color: #ff0000;
+	padding: 0 10px;
+}
+header.mainHeader nav a:hover{
+	background-color: #000;
+	color: #fff;
+	padding: 20px;
+	border-radius: 15px;
+}
+/* -------------Fin estilos de la cabecera ------------- */
+
+
+/* -------------Estilos del Slider principal ------------- */
+section.mainSlider{
+	background-color: #ff3333;
+}
+section.mainSlider h2{
+	padding: 130px 0;
+	text-align: center;
+}
+/* -------------Fin del estilo del Slider principal ------------- */
+
+/* -------------Estilos de las noticias ------------- */
+section.news{
+	text-align: center;
+}
+section.news .newsItem{
+	width: 27%;
+	display: inline-block;
+	background-color: #cc3333;
+	margin: 5px;
+	padding: 20px;
+}
+
+/* -------------Fin estilos de las noticias ------------- */
+footer.mainFooter{
+	background-color: #000;
+	color: #ccc;
+	text-align: center;
+	padding: 20px 0;
+}
+
+
+
+/* -------------Estilos del login de la app ------------- */
+body.bodylogin{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	/*background: seagreen;*/
+
+    background: url('../imagenes/bg.jpg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper{
+	width: 420px;
+	color: #fff;
+	border-radius: 10px;
+	padding: 30px 40px;
+	background: transparent;
+	border: 2px solid rgba(255, 255, 255, .2);
+	backdrop-filter: blur(20px);
+	box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+	animation: fadeInUp .8s ease both;
+}
+
+@keyframes fadeInUp{
+	from{
+		opacity: 0;
+		transform: translateY(30px);
+	}
+	to{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.input-box input{
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	border: none;
+	outline: none;
+	border: 2px solid rgba(255, 255, 255, .2);
+	border-radius: 40px;
+	font-size: 16px;
+	color: #fff;
+	padding: 20px 45px 20px 20px;
+	transition: border-color .3s ease, box-shadow .3s ease, background-color .3s ease;
+}
+.input-box input:focus{
+	border-color: rgba(255, 255, 255, .8);
+	box-shadow: 0 0 12px rgba(255, 255, 255, .3);
+	background-color: rgba(255, 255, 255, .08);
+}
+
+.remember-forgot a{
+	color: #fff;
+	text-decoration: none;
+	transition: opacity .3s ease;
+}
+.remember-forgot a:hover{
+	text-decoration: underline;
+	opacity: .8;
+}
+
+.wrapper .btn{
+	width: 100%;
+	height: 45px;
+	background: #fff;
+	color: #333;
+	border: none;
+	outline: none;
+	border-radius: 40px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 600;
+	transition: transform .2s ease, box-shadow .3s ease, background-color .3s ease;
+}
+.wrapper .btn:hover{
+	transform: translateY(-2px);
+	box-shadow: 0 6px 16px rgba(0, 0, 0, .4);
+	background-color: #f0f0f0;
+}
+.wrapper .btn:active{
+	transform: translateY(0);
+	box-shadow: 0 0 6px rgba(0, 0, 0, .3);
+}
+
+.register-link p a{
+	color: #fff;
+	text-decoration: none;
+	font-weight: 600;
+	transition: opacity .3s ease;
+}
+.register-link p a:hover{
+	text-decoration: underline;
+	opacity: .8;
+}
+/*media*/
+@media(max-width: 450px){
+    body.bodylogin{
+        background: #333;
+    }
+}
+@media(max-width: 800px){
+    body.bodylogin{
+        background: url(../imagenes/giuseppe-argenziano-lTTQ1W_vvSI-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+
+    }
+}
